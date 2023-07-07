@@ -7,7 +7,7 @@ item in the module.  Supports sandboxing."
    [fennel :refer [dofile metadata]]
    [fennel.compiler]
    [cljlib :refer [get-in]]
-   [markdown :refer [gen-function-signature gen-item-signature]]))
+   [markdown :refer [gen-function-signature gen-item-signature gen-item-documentation]]))
 
 (defn- sandbox-module [module file]
   (setmetatable
